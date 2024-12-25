@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                // Tambahkan langkah build di sini (opsional)
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                // Tambahkan langkah test di sini (opsional)
+            }
+        }
+        stage('Archive Artifacts') {
+            steps {
+                archiveArtifacts artifacts: 'build/logs/*.log', followSymlinks: false
+            }
+        }
+    }
+}

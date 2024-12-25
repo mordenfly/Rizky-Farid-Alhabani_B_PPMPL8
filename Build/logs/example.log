@@ -1,0 +1,3 @@
+INFO: Dummy log file for testing Jenkins pipeline
+WARNING: This is a sample warning message
+ERROR: Example error log
